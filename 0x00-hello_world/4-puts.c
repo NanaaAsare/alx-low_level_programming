@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - program that prints a line with puts funtion
- * Retunr: 0
+ * Return: 0
  */
 int main(void)
 {
