@@ -1,3 +1,7 @@
+#ifndef main_h
+#define main_h
+#include <unistd.h>
+
 int _putchar(char c);
 
 int _isupper(int c);
@@ -21,3 +25,5 @@ void print_square(int size);
 void print_traingle(int size);
 
 void print_number(int n);
+
+#endif
