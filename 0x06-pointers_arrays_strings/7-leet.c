@@ -6,17 +6,20 @@
   **/
 char *leet(char *a)
 {
-	int i, j;
-	char let[] = {97, 101, 111, 116, 108};
-	char num[] = {52, 51, 48, 55, 49};
+	char *lower = "aeotl";
+	char *upper = "AEOTL";
+	int replacers[] = {'4', '3', '0', '7', '1'};
+	int i;
+	char *a_ptr = a;
 
-	for (i = 0; a[i] != 0; i++)
+	while (*a != '\0')
 	{
-		for (j = 0; let[j] != 0; j++)
+		for (i = 0; i < 5; i++)
 		{
-			if ((a[i] == let[j]) || (a[i] == let[j] - 32))
-				a[i] = num[j];
+			if (*a == *(lower + 1) || *a == *(upper + 1))
+				*a = replacers[i];
 		}
+		a++;
 	}
-		return (a);
+	return (a_ptr);
 }
