@@ -9,22 +9,21 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *ptr;
-	char *filter;
+	char *filler;
 	unsigned int index;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
+
 	ptr = malloc(size * nmemb);
-	{
-		return (NULL);
-	}
+
 	if (ptr == NULL)
 		return (NULL);
 
-	filter = ptr;
+	filler = ptr;
 
 	for (index = 0; index < (size * nmemb); index++)
-		filter[index] = '\0';
+		filler[index] = '\0';
 
 	return (ptr);
 }
