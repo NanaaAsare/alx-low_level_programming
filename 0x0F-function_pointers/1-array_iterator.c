@@ -1,4 +1,4 @@
-#include "function.h"
+#include "function_pointers.h"
 /**
  * array_iterator - print an array
  * @array: elements to print
